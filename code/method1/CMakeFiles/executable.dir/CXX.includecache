@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/masimisa/Documents/Projet/Escalier/code/method1/final.cpp
+iostream
+-
+vector
+-
+string
+-
+opencv2/opencv.hpp
+-
+print.h
+/home/masimisa/Documents/Projet/Escalier/code/method1/print.h
+
+/home/masimisa/Documents/Projet/Escalier/code/method1/print.cpp
+iostream
+-
+vector
+-
+stdint.h
+-
+regex
+-
+fstream
+-
+string
+-
+print.h
+/home/masimisa/Documents/Projet/Escalier/code/method1/print.h
+
+/home/masimisa/Documents/Projet/Escalier/code/method1/print.h
+string
+-
+

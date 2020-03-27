@@ -1,0 +1,315 @@
+<annotation>
+<filename>esc.jpg</filename>
+<folder>users/masimisa//escalier</folder>
+<source>
+<submittedBy>masimisa</submittedBy>
+</source>
+<imagesize>
+<nrows>547</nrows>
+<ncols>536</ncols>
+</imagesize>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>01-03-20 22:15:36:382</date>
+<id>0</id>
+<type>bounding_box</type>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>10</x>
+<y>519</y>
+<time>01-03-20 22:15:31:057</time>
+</pt>
+<pt>
+<x>531</x>
+<y>519</y>
+<time>01-03-20 22:15:34:045</time>
+</pt>
+<pt>
+<x>531</x>
+<y>543</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>10</x>
+<y>543</y>
+<time>undefined</time>
+</pt>
+<closed_date>01-03-20 22:15:34:048</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>01-03-20 22:15:44:630</date>
+<id>1</id>
+<type>bounding_box</type>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>38</x>
+<y>430</y>
+<time>01-03-20 22:15:39:403</time>
+</pt>
+<pt>
+<x>503</x>
+<y>430</y>
+<time>01-03-20 22:15:42:149</time>
+</pt>
+<pt>
+<x>503</x>
+<y>447</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>38</x>
+<y>447</y>
+<time>undefined</time>
+</pt>
+<closed_date>01-03-20 22:15:42:151</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>01-03-20 22:15:56:181</date>
+<id>2</id>
+<type>bounding_box</type>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>65</x>
+<y>344</y>
+<time>01-03-20 22:15:50:102</time>
+</pt>
+<pt>
+<x>477</x>
+<y>344</y>
+<time>01-03-20 22:15:54:031</time>
+</pt>
+<pt>
+<x>477</x>
+<y>362</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>65</x>
+<y>362</y>
+<time>undefined</time>
+</pt>
+<closed_date>01-03-20 22:15:54:031</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>01-03-20 22:16:05:797</date>
+<id>3</id>
+<type>bounding_box</type>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>89</x>
+<y>271</y>
+<time>01-03-20 22:15:59:810</time>
+</pt>
+<pt>
+<x>450</x>
+<y>271</y>
+<time>01-03-20 22:16:02:437</time>
+</pt>
+<pt>
+<x>450</x>
+<y>288</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>89</x>
+<y>288</y>
+<time>undefined</time>
+</pt>
+<closed_date>01-03-20 22:16:02:438</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>01-03-20 22:16:15:129</date>
+<id>4</id>
+<type>bounding_box</type>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>112</x>
+<y>204</y>
+<time>01-03-20 22:16:10:001</time>
+</pt>
+<pt>
+<x>431</x>
+<y>204</y>
+<time>01-03-20 22:16:12:437</time>
+</pt>
+<pt>
+<x>431</x>
+<y>216</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>112</x>
+<y>216</y>
+<time>undefined</time>
+</pt>
+<closed_date>01-03-20 22:16:12:438</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>01-03-20 22:16:23:480</date>
+<id>5</id>
+<type>bounding_box</type>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>131</x>
+<y>145</y>
+<time>01-03-20 22:16:17:978</time>
+</pt>
+<pt>
+<x>414</x>
+<y>145</y>
+<time>01-03-20 22:16:21:214</time>
+</pt>
+<pt>
+<x>414</x>
+<y>159</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>131</x>
+<y>159</y>
+<time>undefined</time>
+</pt>
+<closed_date>01-03-20 22:16:21:214</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>01-03-20 22:16:33:644</date>
+<id>6</id>
+<type>bounding_box</type>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>148</x>
+<y>97</y>
+<time>01-03-20 22:16:26:654</time>
+</pt>
+<pt>
+<x>395</x>
+<y>97</y>
+<time>01-03-20 22:16:31:598</time>
+</pt>
+<pt>
+<x>395</x>
+<y>105</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>148</x>
+<y>105</y>
+<time>undefined</time>
+</pt>
+<closed_date>01-03-20 22:16:31:599</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>01-03-20 22:16:42:421</date>
+<id>7</id>
+<type>bounding_box</type>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>161</x>
+<y>58</y>
+<time>01-03-20 22:16:37:813</time>
+</pt>
+<pt>
+<x>383</x>
+<y>58</y>
+<time>01-03-20 22:16:40:531</time>
+</pt>
+<pt>
+<x>383</x>
+<y>65</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>161</x>
+<y>65</y>
+<time>undefined</time>
+</pt>
+<closed_date>01-03-20 22:16:40:531</closed_date>
+</polygon>
+</object>
+</annotation>

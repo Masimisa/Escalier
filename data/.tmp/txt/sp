@@ -1,0 +1,10 @@
+
+*************************************** Resultat ***************************************
+Nombre de marche                                                        : 8
+****************************************************************************************
+Nombre de marche estimee par le method Horizontale (sans Preprocessing) : 3
+Nombre de marche estimee par le method Verticale (sans Preprocessing)   : 7
+Taux de precision pour la méthode Horizontale (sans Preprocessing)      : 37.5%
+Taux de precision pour la méthode Verticale (sans Preprocessing)        : 87.5%
+****************************************************************************************
+
