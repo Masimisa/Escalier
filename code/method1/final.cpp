@@ -322,10 +322,7 @@ int main(int argc, char **argv){
 	Mat img, th, imgPreprocessing, thPreprocessing;
 
 	int methodVertical = 0;
-	int methodHorizontal = 0;
-
 	int methodVerticalPreprocessing = 0;
-	int methodHorizontalPreprocessing = 0;
 
 	img = imread(pathImg, 0);
 	imgPreprocessing = imread(pathImg, 0);
@@ -344,7 +341,6 @@ int main(int argc, char **argv){
 
 
 	methodVertical = compteMarcheVertical(img, th);
-	methodHorizontal = compteMarcheHorizontal(img, th);
 
 
 	// Numpy
@@ -364,15 +360,16 @@ int main(int argc, char **argv){
 	convertNumpy2Mat(thPreprocessing, numpy);
 
 	methodVerticalPreprocessing = compteMarcheVertical(imgPreprocessing, thPreprocessing, 3);
-	methodHorizontalPreprocessing = compteMarcheHorizontal(imgPreprocessing, thPreprocessing);
 
 	// Afficher les resultats
-	printConfusionMAtrix(getNumberSteps(pathXML), methodHorizontal, methodVertical, methodHorizontalPreprocessing, methodVerticalPreprocessing);
 
 	system("rm -rf ../../data/.tmp/ap/*");
 	system("rm -rf ../../data/.tmp/sp/*");
 	system("echo '' >> ../../data/.tmp/txt/sp");
 	system("echo '' >> ../../data/.tmp/txt/ap");
+
+
+	printConfusionMAtrix(getNumberSteps(pathXML), methodVertical, methodVerticalPreprocessing);
 
 	//imshow("Display Window", img);
 	//imshow("Threshold Window", th);

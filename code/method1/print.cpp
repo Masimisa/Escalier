@@ -32,16 +32,14 @@ int getNumberSteps(string filename){
 
 
 // Matrice de Confusion
-void printConfusionMAtrix(int real, int predictHorizontal, int predictVertical, int predictHorizontalPreprocessing, int predictVerticalPreprocessing){
+void printConfusionMAtrix(int real, int predictVertical, int predictVerticalPreprocessing){
     
     system("chmod 777 ../../data/.tmp/txt/sp");
     ofstream sp("../../data/.tmp/txt/sp");
     sp << "\n*************************************** Resultat ***************************************" << "\n";
     sp << "Nombre de marche                                                        : " << real << "\n";
     sp << "****************************************************************************************" << "\n";
-    sp << "Nombre de marche estimee par le method Horizontale (sans Preprocessing) : " << predictHorizontal << "\n";
     sp << "Nombre de marche estimee par le method Verticale (sans Preprocessing)   : " << predictVertical << "\n";
-    sp << "Taux de precision pour la méthode Horizontale (sans Preprocessing)      : " << (float(predictHorizontal)/float(real))*100 << "%" << "\n";
     sp << "Taux de precision pour la méthode Verticale (sans Preprocessing)        : " << (float(predictVertical)/float(real))*100 << "%" << "\n";
     sp << "****************************************************************************************" << "\n";
     sp.close();
@@ -51,9 +49,7 @@ void printConfusionMAtrix(int real, int predictHorizontal, int predictVertical, 
     ap << "\n*************************************** Resultat ***************************************" << "\n";
     ap << "Nombre de marche                                                        : " << real << "\n";
     ap << "****************************************************************************************" << "\n";
-    ap << "Nombre de marche estimee par le method Horizontale (avec Preprocessing) : " << predictHorizontalPreprocessing << "\n";
     ap << "Nombre de marche estimee par le method Verticale (avec Preprocessing)   : " << predictVerticalPreprocessing << "\n";
-    ap << "Taux de precision pour la méthode Horizontale (avec Preprocessing)      : " << (float(predictHorizontalPreprocessing)/float(real))*100 << "%" << "\n";
     ap << "Taux de precision pour la méthode Verticale (avec Preprocessing)        : " << (float(predictVerticalPreprocessing)/float(real))*100 << "%" << "\n";
     ap << "****************************************************************************************" << "\n";
     ap.close();
