@@ -1,5 +1,5 @@
-#ifndef METHOD1_H
-#define METHOD1_H
+#ifndef METHOD2_H
+#define METHOD2_H
 
 #include <QDialog>
 #include <QFileDialog>
@@ -14,24 +14,24 @@
 using namespace std;
 
 namespace Ui {
-class Method1;
+class Method2;
 }
 
-class Method1 : public QDialog
+class Method2 : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Method1(QWidget *parent = nullptr, string path_ = "");
-    ~Method1();
+    explicit Method2(QWidget *parent = nullptr, string path_ = "");
+    ~Method2();
 
 private slots:
     void on_pushButton_3_clicked();
+
     void on_pushButton_2_clicked();
 
 private:
-    Ui::Method1 *ui;
+    Ui::Method2 *ui;
     string path;
 };
-
-#endif // METHOD1_H
+#endif // METHOD2_H
