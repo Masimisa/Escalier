@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/executable.dir/masimisa.cpp.o"
+  "CMakeFiles/executable.dir/final.cpp.o"
+  "CMakeFiles/executable.dir/print.cpp.o"
   "executable.pdb"
   "executable"
 )

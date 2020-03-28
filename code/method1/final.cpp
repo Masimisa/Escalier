@@ -316,7 +316,7 @@ int main(int argc, char **argv){
 	string pathXML = input[1];
 
 	//string pathImg = "../../data/images/escalier.jpg";
-	//string pathXML = "../../xml/escalier.xml";
+	//string pathXML = "../../data/xml/escalier.xml";
 
 	//Lecture Image
 	Mat img, th, imgPreprocessing, thPreprocessing;

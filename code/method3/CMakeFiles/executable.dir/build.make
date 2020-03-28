@@ -57,38 +57,64 @@ include CMakeFiles/executable.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/executable.dir/flags.make
 
-CMakeFiles/executable.dir/masimisa.cpp.o: CMakeFiles/executable.dir/flags.make
-CMakeFiles/executable.dir/masimisa.cpp.o: masimisa.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/masimisa/Documents/Projet/Escalier/code/method3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/executable.dir/masimisa.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/executable.dir/masimisa.cpp.o -c /home/masimisa/Documents/Projet/Escalier/code/method3/masimisa.cpp
+CMakeFiles/executable.dir/final.cpp.o: CMakeFiles/executable.dir/flags.make
+CMakeFiles/executable.dir/final.cpp.o: final.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/masimisa/Documents/Projet/Escalier/code/method3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/executable.dir/final.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/executable.dir/final.cpp.o -c /home/masimisa/Documents/Projet/Escalier/code/method3/final.cpp
 
-CMakeFiles/executable.dir/masimisa.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/executable.dir/masimisa.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/masimisa/Documents/Projet/Escalier/code/method3/masimisa.cpp > CMakeFiles/executable.dir/masimisa.cpp.i
+CMakeFiles/executable.dir/final.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/executable.dir/final.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/masimisa/Documents/Projet/Escalier/code/method3/final.cpp > CMakeFiles/executable.dir/final.cpp.i
 
-CMakeFiles/executable.dir/masimisa.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/executable.dir/masimisa.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/masimisa/Documents/Projet/Escalier/code/method3/masimisa.cpp -o CMakeFiles/executable.dir/masimisa.cpp.s
+CMakeFiles/executable.dir/final.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/executable.dir/final.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/masimisa/Documents/Projet/Escalier/code/method3/final.cpp -o CMakeFiles/executable.dir/final.cpp.s
 
-CMakeFiles/executable.dir/masimisa.cpp.o.requires:
+CMakeFiles/executable.dir/final.cpp.o.requires:
 
-.PHONY : CMakeFiles/executable.dir/masimisa.cpp.o.requires
+.PHONY : CMakeFiles/executable.dir/final.cpp.o.requires
 
-CMakeFiles/executable.dir/masimisa.cpp.o.provides: CMakeFiles/executable.dir/masimisa.cpp.o.requires
-	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/masimisa.cpp.o.provides.build
-.PHONY : CMakeFiles/executable.dir/masimisa.cpp.o.provides
+CMakeFiles/executable.dir/final.cpp.o.provides: CMakeFiles/executable.dir/final.cpp.o.requires
+	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/final.cpp.o.provides.build
+.PHONY : CMakeFiles/executable.dir/final.cpp.o.provides
 
-CMakeFiles/executable.dir/masimisa.cpp.o.provides.build: CMakeFiles/executable.dir/masimisa.cpp.o
+CMakeFiles/executable.dir/final.cpp.o.provides.build: CMakeFiles/executable.dir/final.cpp.o
+
+
+CMakeFiles/executable.dir/print.cpp.o: CMakeFiles/executable.dir/flags.make
+CMakeFiles/executable.dir/print.cpp.o: print.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/masimisa/Documents/Projet/Escalier/code/method3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/executable.dir/print.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/executable.dir/print.cpp.o -c /home/masimisa/Documents/Projet/Escalier/code/method3/print.cpp
+
+CMakeFiles/executable.dir/print.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/executable.dir/print.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/masimisa/Documents/Projet/Escalier/code/method3/print.cpp > CMakeFiles/executable.dir/print.cpp.i
+
+CMakeFiles/executable.dir/print.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/executable.dir/print.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/masimisa/Documents/Projet/Escalier/code/method3/print.cpp -o CMakeFiles/executable.dir/print.cpp.s
+
+CMakeFiles/executable.dir/print.cpp.o.requires:
+
+.PHONY : CMakeFiles/executable.dir/print.cpp.o.requires
+
+CMakeFiles/executable.dir/print.cpp.o.provides: CMakeFiles/executable.dir/print.cpp.o.requires
+	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/print.cpp.o.provides.build
+.PHONY : CMakeFiles/executable.dir/print.cpp.o.provides
+
+CMakeFiles/executable.dir/print.cpp.o.provides.build: CMakeFiles/executable.dir/print.cpp.o
 
 
 # Object files for target executable
 executable_OBJECTS = \
-"CMakeFiles/executable.dir/masimisa.cpp.o"
+"CMakeFiles/executable.dir/final.cpp.o" \
+"CMakeFiles/executable.dir/print.cpp.o"
 
 # External object files for target executable
 executable_EXTERNAL_OBJECTS =
 
-executable: CMakeFiles/executable.dir/masimisa.cpp.o
+executable: CMakeFiles/executable.dir/final.cpp.o
+executable: CMakeFiles/executable.dir/print.cpp.o
 executable: CMakeFiles/executable.dir/build.make
 executable: /usr/local/lib/libopencv_dnn.so.4.2.0
 executable: /usr/local/lib/libopencv_gapi.so.4.2.0
@@ -106,7 +132,7 @@ executable: /usr/local/lib/libopencv_flann.so.4.2.0
 executable: /usr/local/lib/libopencv_imgproc.so.4.2.0
 executable: /usr/local/lib/libopencv_core.so.4.2.0
 executable: CMakeFiles/executable.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/masimisa/Documents/Projet/Escalier/code/method3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable executable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/masimisa/Documents/Projet/Escalier/code/method3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable executable"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/executable.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -114,7 +140,8 @@ CMakeFiles/executable.dir/build: executable
 
 .PHONY : CMakeFiles/executable.dir/build
 
-CMakeFiles/executable.dir/requires: CMakeFiles/executable.dir/masimisa.cpp.o.requires
+CMakeFiles/executable.dir/requires: CMakeFiles/executable.dir/final.cpp.o.requires
+CMakeFiles/executable.dir/requires: CMakeFiles/executable.dir/print.cpp.o.requires
 
 .PHONY : CMakeFiles/executable.dir/requires
 

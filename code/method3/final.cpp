@@ -1,8 +1,11 @@
 #include <iostream>
 #include <cmath>
-#include <opencv2/opencv.hpp>
 #include <vector>
 #include <stdint.h>
+
+#include <opencv2/opencv.hpp>
+
+#include "print.h"
 
 using namespace std;
 using namespace cv;
@@ -54,32 +57,6 @@ void convertNumpy2Mat(Mat &img, vector<vector<int>> &numpy){
 		img.at<uint8_t>(positionX, positionY) = numpy[positionX][positionY];
 	}
 }
-
-/*
-void preprocessing_(vector<vector<int>> &numpy){
-	for (int i = 0; i < numpy.size(); i++){
-		for (int j = 0; j < numpy[i].size(); j++){
-			if(numpy[i][j] == 255 ){
-
-
-				if(i+1 > numpy.size() || j-1 < 0 || j+1 > numpy[i].size()){
-					continue;
-				}else{
-					//if(numpy[i][j+1] == 255 && (numpy[i+1][j-1] == 255 || numpy[i+1][j+1] == 255)){
-					//	numpy[i][j] = 0;
-					//	numpy[i+1][j] = 255;
-					//}
-					if(numpy[i][j] == 0  && numpy[i][j+1] == 255 && numpy[i+1][j] == 255){
-						numpy[i][j] = 255;
-						//numpy[i+1][j] = 0;
-					}
-				}
-
-			}
-		}
-	}
-}
-*/
 
 void preprocessing(vector<vector<int>> &black, vector<vector<int>> &numpy){
 	int nbMarche = 0;
@@ -181,7 +158,15 @@ void drawRectangle(Mat &img, vector<vector<int>> &numpy){
 	int x1, y1, x2, y2;
 	int nbBlanc = 0;
 
+	int maxWidth = 0;
+	int width = 0;
+
+	int debut = 0;
+	int fin = 0;
+
 	for (int i = 1; i < numpy.size(); i++){
+		if(maxWidth < width) maxWidth = width;
+		width = 0;
 		nbBlanc = 0;
 		for (int j = 0; j < numpy[i].size(); j++){
 
@@ -189,20 +174,17 @@ void drawRectangle(Mat &img, vector<vector<int>> &numpy){
 				x1 = i; y1 = j; 
 				first = false;
 				nbBlanc++;
+				
 			}
 
 			if(numpy[i][j] == 255){
 				x2 = i; y2 = j;
 				nbBlanc++;
+				width = fin-debut;
 			}
 
 			if(j == numpy[i].size()-1 && nbBlanc == 0) {
-				//rectangle(img, Point(x1, y1), Point(x2, y2), Scalar(0, 0, 0), -1);
-				cout << x1 << "-" << y1 << endl;
-				cout << x2 << "-" << y2 << endl;
-				cout << "---" << endl;
-				rectangle(img, Rect(y1, x1, y2-y1, x2-x1), Scalar(0, 0, 0), -1);
-				//rectangle(img, Rect(x1, y1, x2-x1, y2-y1), Scalar(0, 0, 0), -1);
+				rectangle(img, Rect(y1, x1, y2-y1, x2-x1), Scalar(0, 255, 0), -1);
 				first = true;
 				x1 = 0;
 				y1 = 0;
@@ -216,11 +198,11 @@ void drawRectangle(Mat &img, vector<vector<int>> &numpy){
 
 }
 
-// Fonctionnelle
 void drawRectangle_(vector<vector<int>> &numpy){
 	int nbNoir = 0;
 	int debut = 0;
 	int fin = 0;
+	
 	for (int i = 0; i < numpy.size(); i++){
 		nbNoir = 0;
 		debut = 0;
@@ -251,15 +233,75 @@ void drawRectangle_(vector<vector<int>> &numpy){
 	}
 }
 
+int compteMarcheVertical(Mat &th, int tailleMinMarche=15){
+	// Information concernant la matrice
+	int nbLignes = th.rows;
+	int nbColonnes = th.cols;
+	int nbTotalElement = nbLignes * nbColonnes;
+	int pas = 15;
 
-int main(){
+	// Initialisation de l'algorithme
+	vector<int> tabMarche;
+	int nbMarche = 0;
+	bool changementCouleur = false;
+	int pixelCourant = 0;
+	int nbPixelNoir = 0;
+
+	Scalar color(255, 255, 255);
+	int positionX = 0;
+	int positionY = 0;
+
+	
+
+	for(int j = 0;  j < nbColonnes; j=j+pas){
+		tabMarche.push_back(nbMarche);
+		nbMarche = 0;
+		changementCouleur = false;
+		for(int i = j; i < nbTotalElement; i=i+nbColonnes){
+			positionX = i/nbColonnes;
+			positionY = i%nbColonnes;
+			pixelCourant = int(th.at<uint8_t>(positionX, positionY));
+
+			if(pixelCourant == 0){
+				changementCouleur = true;
+				nbPixelNoir++;
+			}
+
+			if(pixelCourant == 255 && changementCouleur == true){
+				if(nbPixelNoir >= tailleMinMarche){
+					nbMarche++;
+				}
+				nbPixelNoir = 0;
+            	changementCouleur = false;
+			}
+		}
+	}
+ 
+	int nombreDeMarche = *max_element(tabMarche.begin(), tabMarche.end());
+	return nombreDeMarche;
+
+}
+
+
+int main(int argc, char **argv){
+
+    vector<string> input(argv, argv + argc);
+    input.erase(input.begin());
+
+	//string pathImg = input[0];
+	//string pathXML = input[1];
+
+	string pathImg = "../../data/images/esc.jpg";
+	string pathXML = "../../data/xml/esc.xml";
+
 
 	Mat img, th, cannyed_img, line_img;
+
 	float slope = 0;
 
-	string filename = "../../data/images/escalierb.jpg";
-	img = imread(filename, 0);
-	line_img = imread(filename);
+	img = imread(pathImg, 0);
+
+	line_img = imread(pathImg);
 
 	Mat black(img.rows, img.cols, CV_8UC3, cv::Scalar(0, 0, 0));
 	cvtColor(black, black, cv::COLOR_BGR2GRAY);
@@ -289,50 +331,39 @@ int main(){
 	drawRectangle_(numpy_black);
 	drawRectangle(line_img, numpy_black);
 
-	convertNumpy2Mat(cannyed_img, numpy_cannyed); // Regarder si necessaire
+	convertNumpy2Mat(cannyed_img, numpy_cannyed);
 	convertNumpy2Mat(black, numpy_black);
 
 
+	int marche = compteMarcheVertical(black);
+	//////////////////////////////////////////
 
-	// Programme
-
-
-
-
-	//nbMarche = yy(line_img, numpy_cannyed);
-
-	//cout << "nbMarche: " << nbMarche << endl;
-
-/*
-	// Permet de dessiner des lignes dans l'image original
-	vector<Vec4i> lines;
-	// HoughLinesP(cannyed_img, lines, 6, CV_PI/60, 160, 40, 25);
-	HoughLinesP(cannyed_img, lines, 6, CV_PI/180, 80, 30, 10);
-	// lines = cv.HoughLinesP( line_img, rho=6, theta=np.pi / 60, threshold=160, lines=[], minLineLength=40, maxLineGap=25)
-	// Permet de tracer des lignes
-	for( size_t i = 0; i < lines.size(); i++ ){
-		slope = (lines[i][1] - lines[i][3]) / (lines[i][0] - lines[i][2]);
-		if(abs(slope) >= 0.5){
-			continue;
-		}
-
-		line( line_img, Point(lines[i][0], lines[i][1]),
-			Point(lines[i][2], lines[i][3]), Scalar(0,0,255), 3, 8 );
-	}
-*/
-
+		/*
+		//imshow("Display Window", img);
+		imshow("Threshold Window", th);
+		imshow("Cannyed Window", cannyed_img);
+		imshow("Line Window", line_img);
+		imshow("Black Window", black);
+		*/	
 
 	//////////////////////////////////////////
 
-	
-	// imshow("Display Window", img);
-	imshow("Threshold Window", th);
-	imshow("Cannyed Window", cannyed_img);
-	imshow("Line Window", line_img);
-	imshow("Black Window", black);
+
+	// Afficher les resultats
+	system("rm -rf ../../data/.tmp/ap/*");
+	system("rm -rf ../../data/.tmp/sp/*");
+	system("echo '' >> ../../data/.tmp/txt/sp");
+	system("echo '' >> ../../data/.tmp/txt/ap");
+
+	printConfusionMAtrix(getNumberSteps(pathXML), marche);
+
+	imwrite("../../data/.tmp/sp/th.jpg", th);
+	imwrite("../../data/.tmp/sp/cannyed_img.jpg", cannyed_img);
+
+	imwrite("../../data/.tmp/sp/line_img.jpg", line_img);
+	imwrite("../../data/.tmp/sp/black.jpg", black);
 
 	waitKey(0);
 	destroyAllWindows();
 	return 0;
-
 }

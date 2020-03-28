@@ -123,32 +123,59 @@ executable/fast:
 	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/build
 .PHONY : executable/fast
 
-masimisa.o: masimisa.cpp.o
+final.o: final.cpp.o
 
-.PHONY : masimisa.o
+.PHONY : final.o
 
 # target to build an object file
-masimisa.cpp.o:
-	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/masimisa.cpp.o
-.PHONY : masimisa.cpp.o
+final.cpp.o:
+	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/final.cpp.o
+.PHONY : final.cpp.o
 
-masimisa.i: masimisa.cpp.i
+final.i: final.cpp.i
 
-.PHONY : masimisa.i
+.PHONY : final.i
 
 # target to preprocess a source file
-masimisa.cpp.i:
-	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/masimisa.cpp.i
-.PHONY : masimisa.cpp.i
+final.cpp.i:
+	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/final.cpp.i
+.PHONY : final.cpp.i
 
-masimisa.s: masimisa.cpp.s
+final.s: final.cpp.s
 
-.PHONY : masimisa.s
+.PHONY : final.s
 
 # target to generate assembly for a file
-masimisa.cpp.s:
-	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/masimisa.cpp.s
-.PHONY : masimisa.cpp.s
+final.cpp.s:
+	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/final.cpp.s
+.PHONY : final.cpp.s
+
+print.o: print.cpp.o
+
+.PHONY : print.o
+
+# target to build an object file
+print.cpp.o:
+	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/print.cpp.o
+.PHONY : print.cpp.o
+
+print.i: print.cpp.i
+
+.PHONY : print.i
+
+# target to preprocess a source file
+print.cpp.i:
+	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/print.cpp.i
+.PHONY : print.cpp.i
+
+print.s: print.cpp.s
+
+.PHONY : print.s
+
+# target to generate assembly for a file
+print.cpp.s:
+	$(MAKE) -f CMakeFiles/executable.dir/build.make CMakeFiles/executable.dir/print.cpp.s
+.PHONY : print.cpp.s
 
 # Help Target
 help:
@@ -159,9 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... executable"
 	@echo "... edit_cache"
-	@echo "... masimisa.o"
-	@echo "... masimisa.i"
-	@echo "... masimisa.s"
+	@echo "... final.o"
+	@echo "... final.i"
+	@echo "... final.s"
+	@echo "... print.o"
+	@echo "... print.i"
+	@echo "... print.s"
 .PHONY : help
 
 

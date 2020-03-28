@@ -1,4 +1,4 @@
-if [[ $# = 1 ]]
+if [[ $# != 2 ]]
 then
     rm -rf CMakeFiles/
     rm cmake_install.cmake  CMakeCache.txt executable Makefile
@@ -9,5 +9,5 @@ else
     cmake .
     make
     #clear
-    ./executable
+    ./executable $1 $2
 fi
