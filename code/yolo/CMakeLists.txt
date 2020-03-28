@@ -1,5 +1,0 @@
-cmake_minimum_required(VERSION 2.8)
-project(cpp)
-find_package( OpenCV REQUIRED )
-add_executable( executable masimisa.cpp )
-target_link_libraries( executable ${OpenCV_LIBS} )

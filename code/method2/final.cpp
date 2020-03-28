@@ -257,11 +257,11 @@ int main(int argc, char **argv){
     vector<string> input(argv, argv + argc);
     input.erase(input.begin());
 
-	//string pathImg = input[0];
-	//string pathXML = input[1];
+	string pathImg = input[0];
+	string pathXML = input[1];
 
-	string pathImg = "../../data/images/escalier.jpg";
-	string pathXML = "../../xml/escalier.xml";
+	//string pathImg = "../../data/images/escalier.jpg";
+	//string pathXML = "../../xml/escalier.xml";
 
 	//Lecture Image
 	Mat img, th, imgPreprocessing, thPreprocessing;

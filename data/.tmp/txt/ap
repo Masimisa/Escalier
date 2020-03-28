@@ -1,10 +1,8 @@
 
 *************************************** Resultat ***************************************
-Nombre de marche                                                        : 0
+Nombre de marche                                                        : 8
 ****************************************************************************************
-Nombre de marche estimee par le method Horizontale (avec Preprocessing) : 8
-Taux de precision pour la méthode Horizontale (avec Preprocessing)      : inf%
+Nombre de marche estimee par le method Horizontale (avec Preprocessing) : 4
+Taux de precision pour la méthode Horizontale (avec Preprocessing)      : 50%
 ****************************************************************************************
-
-
 
