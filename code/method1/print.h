@@ -1,5 +1,5 @@
-#ifndef YOLO_H
-#define YOLO_H
+#ifndef PRINT_H
+#define PRINT_H
 
 #include <string>
 
