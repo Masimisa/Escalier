@@ -95,3 +95,25 @@ void SecondWindow::on_pushButton_4_clicked()
     method2 = new Method2(this, filename_.substr(0,filename_.length()-17)+"data");
     method2->show();
 }
+
+// Permet de lancer la troisieme methode
+void SecondWindow::on_pushButton_5_clicked()
+{
+    if(filename.size() == 0 || xml.size() == 0){
+        ui->label_6->setText("Veuillez charger une image et un fichier xml.");
+        return;
+    }
+
+    ui->label_6->setText("");
+
+    string filename_ = filename.toStdString();
+    string path = filename_.substr(0,filename_.length()-17)+"code/method3/";
+    string exe_ = "./launcher.sh " + filename.toStdString() + " " + xml.toStdString();
+
+    system(("cd " + path + " && " + exe_).c_str());
+
+    cout << "Dans la methode 3" << endl;
+    cout << path << endl;
+    method3 = new Method3(this, filename_.substr(0,filename_.length()-17)+"data");
+    method3->show();
+}

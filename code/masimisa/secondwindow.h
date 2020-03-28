@@ -4,6 +4,7 @@
 #include <QDialog>
 #include "method1.h"
 #include "method2.h"
+#include "method3.h"
 
 namespace Ui {
 class SecondWindow;
@@ -26,10 +27,13 @@ private slots:
 
     void on_pushButton_4_clicked();
 
+    void on_pushButton_5_clicked();
+
 private:
     Ui::SecondWindow *ui;
     Method1 *method1;
     Method2 *method2;
+    Method3 *method3;
     QString filename;
     QString xml;
 };

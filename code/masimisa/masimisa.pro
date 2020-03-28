@@ -20,18 +20,21 @@ SOURCES += \
     mainwindow.cpp \
     method1.cpp \
     method2.cpp \
+    method3.cpp \
     secondwindow.cpp
 
 HEADERS += \
     mainwindow.h \
     method1.h \
     method2.h \
+    method3.h \
     secondwindow.h
 
 FORMS += \
     mainwindow.ui \
     method1.ui \
     method2.ui \
+    method3.ui \
     secondwindow.ui
 
 INCLUDEPATH += /usr/include/opencv

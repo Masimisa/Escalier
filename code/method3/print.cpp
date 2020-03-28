@@ -30,7 +30,6 @@ int getNumberSteps(string filename){
     return match_count;
 }
 
-
 // Matrice de Confusion
 void printConfusionMAtrix(int real, int predictVertical){
     

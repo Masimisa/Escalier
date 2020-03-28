@@ -288,11 +288,11 @@ int main(int argc, char **argv){
     vector<string> input(argv, argv + argc);
     input.erase(input.begin());
 
-	//string pathImg = input[0];
-	//string pathXML = input[1];
+	string pathImg = input[0];
+	string pathXML = input[1];
 
-	string pathImg = "../../data/images/esc.jpg";
-	string pathXML = "../../data/xml/esc.xml";
+	//string pathImg = "../../data/images/esc.jpg";
+	//string pathXML = "../../data/xml/esc.xml";
 
 
 	Mat img, th, cannyed_img, line_img;
