@@ -1,3 +1,0 @@
-/home/masimisa/Documents/Projet/Escalier/code/method1/CMakeFiles/rebuild_cache.dir
-/home/masimisa/Documents/Projet/Escalier/code/method1/CMakeFiles/executable.dir
-/home/masimisa/Documents/Projet/Escalier/code/method1/CMakeFiles/edit_cache.dir
