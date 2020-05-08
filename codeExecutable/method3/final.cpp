@@ -192,6 +192,54 @@ void drawRectangle(Mat &img, vector<vector<int>> &numpy){
 	}
 }
 
+// Retourne le nombre de marche à partir d'un tableau.
+int getNbMarche(vector<int> tab){
+
+	// On trie le tableau dans l'ordre decroissant
+	sort (tab.begin(), tab.end(),greater<int>());
+
+	int premier = 0;
+	int second = 0;
+	int n = 0;
+	int m = 0;
+
+	while (true){
+
+		// On recupere l'element maximal
+		premier = tab[0];
+		n = 0;
+			
+		// On regarde le nombre de fois qu'il apparait dans le vector
+		for (auto i = tab.begin(); i != tab.end(); i++) { 			
+			if(premier == *i){
+				n++;
+			}
+		}		
+
+		// On supprime l'element maximal
+		std::remove(tab.begin(), tab.end(), premier);
+
+		// On recupere le second element maximal
+		second = tab[0];
+		m = 0;
+		
+		// On regarde le nombre de fois qu'il apparait dans le vector
+		for (auto i = tab.begin(); i != tab.end(); i++) { 
+			if(second == *i){
+				m++;
+			}
+		}
+
+		// On supprime l'element maximal
+		std::remove(tab.begin(), tab.end(), premier);
+
+		// On retourne l'element maximal qui à la plus grande frequence
+		if (n >= m) {
+			return premier;
+		}
+	}
+}
+
 // Permet de compter les marches en faisant un balayage vertical
 int compteMarcheVertical(Mat &img, Mat &th, int tailleMinMarche=15){
 
@@ -239,8 +287,8 @@ int compteMarcheVertical(Mat &img, Mat &th, int tailleMinMarche=15){
 		}
 	}
  
-	// Retourner la valeur maximal
-	int nombreDeMarche = *max_element(tabMarche.begin(), tabMarche.end());
+	// Retourne l'element maximal avec la plus grande frequence
+	int nombreDeMarche = getNbMarche(tabMarche);
 	return nombreDeMarche;
 
 }
