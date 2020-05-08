@@ -1,0 +1,125 @@
+<annotation>
+<filename>k.jpg</filename>
+<folder>users/masimisa//escalier</folder>
+<source>
+<submittedBy>masimisa</submittedBy>
+</source>
+<imagesize>
+<nrows>291</nrows>
+<ncols>504</ncols>
+</imagesize>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:13:17:807</date>
+<id>0</id>
+<type>bounding_box</type>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>72</x>
+<y>244</y>
+<time>08-05-20 15:13:10:123</time>
+</pt>
+<pt>
+<x>441</x>
+<y>244</y>
+<time>08-05-20 15:13:14:968</time>
+</pt>
+<pt>
+<x>441</x>
+<y>279</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>72</x>
+<y>279</y>
+<time>undefined</time>
+</pt>
+<closed_date>08-05-20 15:13:14:970</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:13:24:423</date>
+<id>1</id>
+<type>bounding_box</type>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>90</x>
+<y>147</y>
+<time>08-05-20 15:13:20:503</time>
+</pt>
+<pt>
+<x>421</x>
+<y>147</y>
+<time>08-05-20 15:13:22:625</time>
+</pt>
+<pt>
+<x>421</x>
+<y>183</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>90</x>
+<y>183</y>
+<time>undefined</time>
+</pt>
+<closed_date>08-05-20 15:13:22:626</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:13:29:382</date>
+<id>2</id>
+<type>bounding_box</type>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>107</x>
+<y>70</y>
+<time>08-05-20 15:13:26:158</time>
+</pt>
+<pt>
+<x>405</x>
+<y>70</y>
+<time>08-05-20 15:13:28:179</time>
+</pt>
+<pt>
+<x>405</x>
+<y>104</y>
+<time>undefined</time>
+</pt>
+<pt>
+<x>107</x>
+<y>104</y>
+<time>undefined</time>
+</pt>
+<closed_date>08-05-20 15:13:28:180</closed_date>
+</polygon>
+</object>
+</annotation>

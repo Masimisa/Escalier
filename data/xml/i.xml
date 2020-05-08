@@ -1,0 +1,418 @@
+<annotation>
+<filename>i.jpg</filename>
+<folder>users/masimisa//escalier</folder>
+<source>
+<submittedBy>masimisa</submittedBy>
+</source>
+<imagesize>
+<nrows>1500</nrows>
+<ncols>1000</ncols>
+</imagesize>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:05:41:704</date>
+<id>0</id>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>996</x>
+<y>1306</y>
+<time>08-05-20 15:05:33:966</time>
+</pt>
+<pt>
+<x>996</x>
+<y>1385</y>
+<time>08-05-20 15:05:35:513</time>
+</pt>
+<pt>
+<x>301</x>
+<y>1369</y>
+<time>08-05-20 15:05:36:978</time>
+</pt>
+<pt>
+<x>291</x>
+<y>1266</y>
+<time>08-05-20 15:05:38:008</time>
+</pt>
+<closed_date>08-05-20 15:05:39:126</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:05:50:814</date>
+<id>1</id>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>331</x>
+<y>1105</y>
+<time>08-05-20 15:05:43:899</time>
+</pt>
+<pt>
+<x>337</x>
+<y>1193</y>
+<time>08-05-20 15:05:45:273</time>
+</pt>
+<pt>
+<x>990</x>
+<y>1184</y>
+<time>08-05-20 15:05:46:862</time>
+</pt>
+<pt>
+<x>987</x>
+<y>1108</y>
+<time>08-05-20 15:05:48:020</time>
+</pt>
+<closed_date>08-05-20 15:05:49:224</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:05:58:528</date>
+<id>2</id>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>325</x>
+<y>929</y>
+<time>08-05-20 15:05:52:243</time>
+</pt>
+<pt>
+<x>337</x>
+<y>1029</y>
+<time>08-05-20 15:05:53:073</time>
+</pt>
+<pt>
+<x>914</x>
+<y>1014</y>
+<time>08-05-20 15:05:54:554</time>
+</pt>
+<pt>
+<x>914</x>
+<y>932</y>
+<time>08-05-20 15:05:55:906</time>
+</pt>
+<closed_date>08-05-20 15:05:57:110</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:06:19:529</date>
+<id>3</id>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>364</x>
+<y>799</y>
+<time>08-05-20 15:06:14:403</time>
+</pt>
+<pt>
+<x>364</x>
+<y>881</y>
+<time>08-05-20 15:06:15:307</time>
+</pt>
+<pt>
+<x>847</x>
+<y>865</y>
+<time>08-05-20 15:06:16:401</time>
+</pt>
+<pt>
+<x>847</x>
+<y>789</y>
+<time>08-05-20 15:06:17:158</time>
+</pt>
+<closed_date>08-05-20 15:06:18:211</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:06:29:225</date>
+<id>4</id>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>370</x>
+<y>677</y>
+<time>08-05-20 15:06:21:459</time>
+</pt>
+<pt>
+<x>370</x>
+<y>762</y>
+<time>08-05-20 15:06:22:475</time>
+</pt>
+<pt>
+<x>759</x>
+<y>750</y>
+<time>08-05-20 15:06:25:642</time>
+</pt>
+<pt>
+<x>750</x>
+<y>692</y>
+<time>08-05-20 15:06:26:821</time>
+</pt>
+<closed_date>08-05-20 15:06:27:914</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:06:39:559</date>
+<id>5</id>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>668</x>
+<y>592</y>
+<time>08-05-20 15:06:31:806</time>
+</pt>
+<pt>
+<x>668</x>
+<y>659</y>
+<time>08-05-20 15:06:33:729</time>
+</pt>
+<pt>
+<x>243</x>
+<y>656</y>
+<time>08-05-20 15:06:35:753</time>
+</pt>
+<pt>
+<x>237</x>
+<y>568</y>
+<time>08-05-20 15:06:37:157</time>
+</pt>
+<closed_date>08-05-20 15:06:38:113</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:06:48:559</date>
+<id>6</id>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>580</x>
+<y>556</y>
+<time>08-05-20 15:06:41:471</time>
+</pt>
+<pt>
+<x>583</x>
+<y>507</y>
+<time>08-05-20 15:06:42:536</time>
+</pt>
+<pt>
+<x>179</x>
+<y>480</y>
+<time>08-05-20 15:06:44:399</time>
+</pt>
+<pt>
+<x>188</x>
+<y>540</y>
+<time>08-05-20 15:06:45:954</time>
+</pt>
+<closed_date>08-05-20 15:06:47:207</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:06:57:804</date>
+<id>7</id>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>480</x>
+<y>434</y>
+<time>08-05-20 15:06:50:452</time>
+</pt>
+<pt>
+<x>486</x>
+<y>477</y>
+<time>08-05-20 15:06:51:653</time>
+</pt>
+<pt>
+<x>128</x>
+<y>452</y>
+<time>08-05-20 15:06:53:416</time>
+</pt>
+<pt>
+<x>124</x>
+<y>373</y>
+<time>08-05-20 15:06:54:698</time>
+</pt>
+<pt>
+<x>455</x>
+<y>431</y>
+<time>08-05-20 15:06:55:779</time>
+</pt>
+<closed_date>08-05-20 15:06:56:487</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:07:06:696</date>
+<id>8</id>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>58</x>
+<y>285</y>
+<time>08-05-20 15:07:00:154</time>
+</pt>
+<pt>
+<x>67</x>
+<y>364</y>
+<time>08-05-20 15:07:01:542</time>
+</pt>
+<pt>
+<x>370</x>
+<y>389</y>
+<time>08-05-20 15:07:02:686</time>
+</pt>
+<pt>
+<x>370</x>
+<y>364</y>
+<time>08-05-20 15:07:03:556</time>
+</pt>
+<closed_date>08-05-20 15:07:04:985</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:07:27:493</date>
+<id>9</id>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>6</x>
+<y>206</y>
+<time>08-05-20 15:07:18:755</time>
+</pt>
+<pt>
+<x>6</x>
+<y>264</y>
+<time>08-05-20 15:07:20:503</time>
+</pt>
+<pt>
+<x>282</x>
+<y>319</y>
+<time>08-05-20 15:07:22:318</time>
+</pt>
+<pt>
+<x>276</x>
+<y>288</y>
+<time>08-05-20 15:07:24:257</time>
+</pt>
+<closed_date>08-05-20 15:07:25:659</closed_date>
+</polygon>
+</object>
+<object>
+<name>e1</name>
+<deleted>0</deleted>
+<verified>0</verified>
+<occluded>no</occluded>
+<attributes/>
+<parts>
+<hasparts/>
+<ispartof/>
+</parts>
+<date>08-05-20 15:07:38:963</date>
+<id>10</id>
+<polygon>
+<username>anonymous</username>
+<pt>
+<x>15</x>
+<y>164</y>
+<time>08-05-20 15:07:31:417</time>
+</pt>
+<pt>
+<x>158</x>
+<y>219</y>
+<time>08-05-20 15:07:35:464</time>
+</pt>
+<pt>
+<x>158</x>
+<y>228</y>
+<time>08-05-20 15:07:36:285</time>
+</pt>
+<closed_date>08-05-20 15:07:37:365</closed_date>
+</polygon>
+</object>
+</annotation>
