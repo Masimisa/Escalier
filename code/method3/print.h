@@ -4,6 +4,6 @@
 #include <string>
 
 int getNumberSteps(std::string);
-void printConfusionMAtrix(int, int);
+void printConfusionMAtrix(int, int, int);
 
 #endif

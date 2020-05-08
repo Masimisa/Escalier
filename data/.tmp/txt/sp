@@ -1,7 +1,11 @@
 
 *************************************** Resultat ***************************************
-Nombre de marche                                                        : 8
+Nombre de marche                                                        : 3
 ****************************************************************************************
-Nombre de marche estimee                                                : 8
-Taux de precision                                                       : 100%
+Nombre de marche estimee par le méthode Vertical                         : 2
+Taux de precision pour la méthode Vertical                              : 66%
+****************************************************************************************
+****************************************************************************************
+Nombre de marche estimee par le méthode Horizontal                       : 2
+Taux de precision pour la méthode Horizontal                            : 66%
 ****************************************************************************************

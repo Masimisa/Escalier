@@ -30,17 +30,35 @@ int getNumberSteps(string filename){
     return match_count;
 }
 
+// Retourne le taux de precision
+int precision(float predict, float real) {
+    float result = (predict / real) * 100;
+    if (result <= 100){
+        return result;
+    }
+
+    result = 100 - (result - 100);
+    return result;
+}
+
+
 // Matrice de Confusion
-void printConfusionMAtrix(int real, int predictVertical){
+void printConfusionMAtrix(int real, int predictVertical, int predictHorizontal){
     
     system("chmod 777 ../../data/.tmp/txt/sp");
     ofstream sp("../../data/.tmp/txt/sp");
-    sp << "\n*************************************** Resultat ***************************************" << "\n";
-    sp << "Nombre de marche                                                        : " << real << "\n";
-    sp << "****************************************************************************************" << "\n";
-    sp << "Nombre de marche estimee                                                : " << predictVertical << "\n";
-    sp << "Taux de precision                                                       : " << (float(predictVertical)/float(real))*100 << "%" << "\n";
-    sp << "****************************************************************************************" << "\n";
+
+    sp << "\n*************************************** Resultat ***************************************" << endl;
+    sp << "Nombre de marche                                                        : " << real << endl;
+    sp << "****************************************************************************************" << endl;
+    sp << "Nombre de marche estimee par le méthode Vertical                         : " << predictVertical << endl;
+    sp << "Taux de precision pour la méthode Vertical                              : " << precision(float(predictVertical),float(real)) << "%" << endl;
+    sp << "****************************************************************************************" << endl;
+    sp << "****************************************************************************************" << endl;
+    sp << "Nombre de marche estimee par le méthode Horizontal                       : " << predictHorizontal << endl;
+    sp << "Taux de precision pour la méthode Horizontal                            : " << precision(float(predictHorizontal),float(real)) << "%" << endl;
+    sp << "****************************************************************************************" << endl;
+    
     sp.close();
     
 }

@@ -141,9 +141,9 @@ border-radius: 15px;</string>
    <property name="geometry">
     <rect>
      <x>90</x>
-     <y>480</y>
+     <y>460</y>
      <width>741</width>
-     <height>141</height>
+     <height>171</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -175,14 +175,48 @@ border-radius: 15px;</string>
     <string>&lt;</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>70</y>
+     <width>303</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>70</y>
+     <width>303</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_10</zorder>
+  <zorder>label_9</zorder>
+  <zorder>label_7</zorder>
+  <zorder>label_5</zorder>
   <zorder>label</zorder>
   <zorder>label_3</zorder>
   <zorder>label_8</zorder>
   <zorder>pushButton_2</zorder>
-  <zorder>label_7</zorder>
   <zorder>label_2</zorder>
   <zorder>pushButton_3</zorder>
-  <zorder>label_5</zorder>
   <zorder>label_6</zorder>
  </widget>
  <resources/>

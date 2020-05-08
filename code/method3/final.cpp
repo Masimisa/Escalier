@@ -194,7 +194,7 @@ void drawRectangle(Mat &img, vector<vector<int>> &numpy){
 }
 
 // Permet de compter les marches en faisant un balayage vertical
-int compteMarcheVertical(Mat &th, int tailleMinMarche=15){
+int compteMarcheVertical(Mat &img, Mat &th, int tailleMinMarche=15){
 
 	// Une marche minimum doit être compose de 15 pixels
 
@@ -231,6 +231,7 @@ int compteMarcheVertical(Mat &th, int tailleMinMarche=15){
 
 			if(pixelCourant == 255 && changementCouleur == true){
 				if(nbPixelNoir >= tailleMinMarche){
+					circle(img, Point(positionY, positionX), 3, color, -1);
 					nbMarche++;
 				}
 				nbPixelNoir = 0;
@@ -245,6 +246,61 @@ int compteMarcheVertical(Mat &th, int tailleMinMarche=15){
 
 }
 
+// Permet de compter les marches en faisant un balayage horizontal
+int compteMarcheHorizontal(Mat &img, Mat &th){
+
+	// Information concernant la matrice
+	int nbLignes = th.rows;
+	int nbColonnes = th.cols;
+	int nbTotalElement = nbLignes * nbColonnes;
+
+	// Initialisation de l'algorithme
+	vector<int> tabMarche; // Stocke le nombre de marche à chaque parcours
+	int nbMarche = 0;
+	bool changementCouleur = false;
+	int pixelCourant = 0;
+	int nbPixelNoir = 0;
+
+	Scalar color(255, 255, 255);
+	int positionX = 0;
+	int positionY = 0;
+
+	int i = 0;
+	int nbLigneNoir = 0;
+
+	for(int j = 0; j < nbTotalElement; j++){
+
+		positionY = i%nbColonnes;
+		pixelCourant = int(th.at<uint8_t>(positionX, positionY));
+
+		if(pixelCourant == 255){
+			if(nbPixelNoir == 0){ // Compte le nombre de pixel noir dans la ligne
+				circle(img, Point(positionY, positionX), 2, color, -1);
+			}
+			nbPixelNoir++;
+		}
+
+		i++;
+		if(i >= nbColonnes){ // Longueur d'une ligne
+			positionX++;
+
+			if(nbPixelNoir > 5){ // Nombre de pixel noir dans la ligne
+				nbLigneNoir++;
+			}
+
+			if(nbPixelNoir == 0 || i == nbTotalElement){
+				if(nbLigneNoir > 5){
+					nbMarche++;
+					nbLigneNoir = 0;			
+				}
+			}
+			nbPixelNoir = 0;
+			i = 0;
+		}
+	}
+	return nbMarche;
+}
+
 int main(int argc, char **argv){
     vector<string> input(argv, argv + argc);
     input.erase(input.begin());
@@ -252,9 +308,11 @@ int main(int argc, char **argv){
 	string pathImg = input[0];
 	string pathXML = input[1];
 
-	Mat img, th, cannyed_img, line_img;
+	Mat img, imgV, imgH, th, cannyed_img, line_img;
 
 	img = imread(pathImg, 0);
+	imgV = imread(pathImg, 0);
+	imgH = imread(pathImg, 0);
 	line_img = imread(pathImg);
 
 	Mat black(img.rows, img.cols, CV_8UC3, cv::Scalar(0, 0, 0));
@@ -283,7 +341,8 @@ int main(int argc, char **argv){
 	convertNumpy2Mat(cannyed_img, numpy_cannyed);
 	convertNumpy2Mat(black, numpy_black);
 
-	int marche = compteMarcheVertical(black);
+	int methodHorizontal = compteMarcheHorizontal(imgH, black);
+	int methodVertical = compteMarcheVertical(imgV, black);
 
 	// Afficher les resultats
 	system("rm -rf ../../data/.tmp/ap/*");
@@ -291,13 +350,16 @@ int main(int argc, char **argv){
 	system("echo '' >> ../../data/.tmp/txt/sp");
 	system("echo '' >> ../../data/.tmp/txt/ap");
 
-	printConfusionMAtrix(getNumberSteps(pathXML), marche);
+	printConfusionMAtrix(getNumberSteps(pathXML), methodVertical, methodHorizontal);
 
 	imwrite("../../data/.tmp/sp/th.jpg", th);
 	imwrite("../../data/.tmp/sp/cannyed_img.jpg", cannyed_img);
 
 	imwrite("../../data/.tmp/sp/line_img.jpg", line_img);
 	imwrite("../../data/.tmp/sp/black.jpg", black);
+
+	imwrite("../../data/.tmp/sp/imgV.jpg", imgV);
+	imwrite("../../data/.tmp/sp/imgH.jpg", imgH);
 
 	return 0;
 }

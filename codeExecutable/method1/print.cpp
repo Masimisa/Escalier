@@ -46,11 +46,11 @@ void printConfusionMAtrix(int real, int predictVertical, int predictHorizontal){
     cout << "\n*************************************** Resultat ***************************************" << endl;
     cout << "Nombre de marche                                                        : " << real << endl;
     cout << "****************************************************************************************" << endl;
-    cout << "Nombre de marche estimee par le méthode Vertical                         : " << predictVertical << endl;
+    cout << "Nombre de marche estimee par le méthode Vertical                        : " << predictVertical << endl;
     cout << "Taux de precision pour la méthode Vertical                              : " << precision(float(predictVertical),float(real)) << "%" << endl;
     cout << "****************************************************************************************" << endl;
     cout << "****************************************************************************************" << endl;
-    cout << "Nombre de marche estimee par le méthode Horizontal                       : " << predictHorizontal << endl;
+    cout << "Nombre de marche estimee par le méthode Horizontal                      : " << predictHorizontal << endl;
     cout << "Taux de precision pour la méthode Horizontal                            : " << precision(float(predictHorizontal),float(real)) << "%" << endl;
     cout << "****************************************************************************************" << endl;
 }

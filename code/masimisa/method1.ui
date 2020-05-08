@@ -19,9 +19,9 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>10</y>
-     <width>489</width>
+     <x>400</x>
+     <y>20</y>
+     <width>161</width>
      <height>34</height>
     </rect>
    </property>
@@ -32,7 +32,7 @@
     </font>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;Méthode 1 : Balayage Vertical&lt;/span&gt;&lt;/h2&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h2 style=&quot; margin-top:16px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:x-large; font-weight:600;&quot;&gt;          Méthode 1&lt;/span&gt;&lt;/h2&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -73,7 +73,7 @@ border:none;
 border-radius: 15px;</string>
    </property>
    <property name="text">
-    <string>Avec Preprocessing</string>
+    <string>Horizontale</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_3">
@@ -95,7 +95,7 @@ border:none;
 border-radius: 15px;</string>
    </property>
    <property name="text">
-    <string>Sans Preprocessing</string>
+    <string>Verticale</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">

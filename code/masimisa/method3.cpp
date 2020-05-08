@@ -37,6 +37,20 @@ Method3::Method3(QWidget *parent, string path_) :
     h = ui->label_8->height();
     ui->label_8->setPixmap(pix___.scaled(w, h, Qt::KeepAspectRatio));
 
+    // Cinquieme Label
+    QPixmap pix____(QString::fromStdString(path+"/.tmp/sp/imgV.jpg"));
+    w = ui->label_9->width();
+    h = ui->label_9->height();
+    ui->label_9->setPixmap(pix____.scaled(w, h, Qt::KeepAspectRatio));
+
+    // Sixieme Label
+    QPixmap pix_____(QString::fromStdString(path+"/.tmp/sp/imgH.jpg"));
+    w = ui->label_10->width();
+    h = ui->label_10->height();
+    ui->label_10->setPixmap(pix_____.scaled(w, h, Qt::KeepAspectRatio));
+
+
+
     ifstream sp(path+"/.tmp/txt/sp");
     string ligne; //A variable to store the read lines
     string text;  //A variable to store all the text, we will make the regular expression on this variable
@@ -56,18 +70,42 @@ Method3::~Method3()
     delete ui;
 }
 
+// A Gauche
 void Method3::on_pushButton_3_clicked()
 {
-    ui->label_7->setHidden(true);
-    ui->label_8->setHidden(true);
-    ui->label_5->setHidden(false);
-    ui->label_6->setHidden(false);
+    if(!ui->label_7->isHidden()){
+        ui->label_5->setHidden(false);
+        ui->label_6->setHidden(false);
+        ui->label_7->setHidden(true);
+        ui->label_8->setHidden(true);
+        ui->label_9->setHidden(true);
+        ui->label_10->setHidden(true);
+    }else if(!ui->label_9->isHidden()){
+        ui->label_5->setHidden(true);
+        ui->label_6->setHidden(true);
+        ui->label_7->setHidden(false);
+        ui->label_8->setHidden(false);
+        ui->label_9->setHidden(true);
+        ui->label_10->setHidden(true);
+    }
 }
 
+// A Droite
 void Method3::on_pushButton_2_clicked()
 {
-    ui->label_7->setHidden(false);
-    ui->label_8->setHidden(false);
-    ui->label_5->setHidden(true);
-    ui->label_6->setHidden(true);
+    if(!ui->label_5->isHidden()){
+        ui->label_5->setHidden(true);
+        ui->label_6->setHidden(true);
+        ui->label_7->setHidden(false);
+        ui->label_8->setHidden(false);
+        ui->label_9->setHidden(true);
+        ui->label_10->setHidden(true);
+    }else if(!ui->label_7->isHidden()){
+        ui->label_5->setHidden(true);
+        ui->label_6->setHidden(true);
+        ui->label_7->setHidden(true);
+        ui->label_8->setHidden(true);
+        ui->label_9->setHidden(false);
+        ui->label_10->setHidden(false);
+    }
 }
