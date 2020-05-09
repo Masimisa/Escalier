@@ -1,4 +1,4 @@
-if [[ $# != 2 ]]
+if [[ $# != 0 ]]
 then
     rm -rf CMakeFiles/
     rm cmake_install.cmake  CMakeCache.txt executable Makefile

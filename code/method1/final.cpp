@@ -205,8 +205,8 @@ int main(int argc, char **argv){
 	methodVertical = compteMarcheVertical(imgV, th);
 
 	// Afficher les Resultats
-	system("rm -rf ../../data/.tmp/ap/*");
-	system("rm -rf ../../data/.tmp/sp/*");
+	system("rm -rf ../../data/.tmp/ap/*.jpg");
+	system("rm -rf ../../data/.tmp/sp/*.jpg");
 	system("echo '' >> ../../data/.tmp/txt/sp");
 	system("echo '' >> ../../data/.tmp/txt/ap");
 

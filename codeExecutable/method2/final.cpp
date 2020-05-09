@@ -25,7 +25,7 @@ int findBestThreshold(Mat img){
 	}
 }
 
-// Permet d'emuler d'un Numpy Array
+// Permet d'emuler un Numpy Array
 void emulateNumpy(Mat &img, vector<vector<int>> &numpy){
 	int nbLignes = img.rows;
 	int nbColonnes = img.cols;

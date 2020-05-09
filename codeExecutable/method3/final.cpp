@@ -25,7 +25,7 @@ int findBestThreshold(Mat img, float n){
 	}
 }
 
-// Permet d'emuler d'un Numpy Array
+// Permet d'emuler un Numpy Array
 void emulateNumpy(Mat &img, vector<vector<int>> &numpy){
 	int nbLignes = img.rows;
 	int nbColonnes = img.cols;
@@ -378,6 +378,7 @@ int main(int argc, char **argv){
 	emulateNumpy(cannyed_img, numpy_cannyed);
 	emulateNumpy(black, numpy_black);
 
+	// Affichage des contre-marches
 	printFirstLastPixelOnBlack(numpy_black, numpy_cannyed);
 	matchFirstLastDrawLine(numpy_black);
 	drawRectangle(line_img, numpy_black);
