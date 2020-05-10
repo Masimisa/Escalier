@@ -1,3 +1,10 @@
+/**
+ * Count the number of steps of a staircase 
+ *
+ * This method is an evolution of the previous method by doing more preprocessing
+ * UI Version
+ * @author : EL RAIS David
+ */
 #include <iostream>
 #include <vector>
 #include <string>

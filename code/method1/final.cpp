@@ -1,3 +1,9 @@
+/**
+ * Count the number of steps of a staircase 
+ *
+ * UI Version
+ * @author : EL RAIS David
+ */
 #include <iostream>
 #include <vector>
 #include <string>

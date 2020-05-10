@@ -1,3 +1,10 @@
+/**
+ * Count the number of steps of a staircase 
+ *
+ * We are counting the number of steps by recreating the counter step
+ * UI Version
+ * @author : EL RAIS David
+ */
 #include <iostream>
 #include <cmath>
 #include <vector>
